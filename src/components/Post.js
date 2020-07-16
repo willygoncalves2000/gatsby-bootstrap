@@ -3,7 +3,7 @@ import { Card, Button} from 'react-bootstrap';
 
 const Post = (props) => (
 
-  <post>
+  <article>
     <div className="p-3">
       <Card>
       <Card.Img variant="top" src={props.image} alt={props.alt || "default"} />
@@ -14,7 +14,7 @@ const Post = (props) => (
       </Card.Body>
       </Card>
     </div>
-  </post>
+  </article>
 )
 
 export default Post;
