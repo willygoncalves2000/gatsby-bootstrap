@@ -12,6 +12,7 @@ export default function Home( {data} ) {
 
       {data.allWordpressPost.nodes.map((node) => (
         <Post 
+          key={node.slug}
           image={node.featured_media.source_url}
           title={node.title}
           excerpt={node.excerpt}
